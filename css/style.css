@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    font-family: Calibri Light, serif;
+
+}
+
+body{
+    background: #3d5a80;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*NAVBAR*/
+
+.main-title{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    background: #212529;
+    color: white;
+}
+
+.main-title:hover{
+    background: #f9c74f;
+    color: #212529;
+}
+
+img{
+    max-width: 100%;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+
+/*GALLERY*/
+
+.image-container{
+    padding: 15px;
+    background: #343a40;
+    width: 40%;
+    display: grid;
+    margin: 0 auto;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/*FOOTER*/
+
+.main-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 50px;
+    background: #212529;
+    margin-top: 50px;
+    color: white;
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+i:hover{
+    color: cyan;
+    transform: rotate(15deg);
+}
+
+.contact-info{
+    font-size: 22px;
+}
+
+
+
+/*-----------------------------------------------MEDIA QUERIES--------------------------------------------------------*/
+
+/*--------------------------------------IPAD---------------------------------------*/
+
+@media(max-width: 1100px){
+
+    /*NAVBAR*/
+
+    .main-title{
+        font-size: 24px;
+    }
+
+
+    /*GALLERY*/
+
+    .image-container{
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /*FOOTER*/
+
+    .main-footer{
+        grid-template-columns: 1fr;
+    }
+
+    .social-media{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-info{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 22px;
+    }
+
+
+}
+
+
+
+/*-----------------------------------CELLPHONE-------------------------------------*/
+
+
+@media(max-width: 500px){
+
+    /*NAVBAR*/
+
+    .main-title{
+        font-size: 20px;
+    }
+
+    /*GALLERY*/
+
+    .image-container{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+
+    /*FOOTER*/
+
+    .main-footer{
+        grid-template-columns: 1fr;
+    }
+
+    .social-media{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-info{
+        text-align: left;
+        font-size: 22px;
+    }
+
+
+
+
+}
+
+
